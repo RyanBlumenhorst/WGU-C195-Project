@@ -1,3 +1,5 @@
+# WGU-C195-Project
+
 Title: Scheduling Program
 
 Purpose: This program will connect to the database, 
