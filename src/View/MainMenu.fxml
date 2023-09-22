@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainMenuController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="74.0" prefWidth="628.0">
+            <children>
+                <Label text="%mainMenu_lbl">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutY="449.0" prefHeight="50.0" prefWidth="167.0">
+            <children>
+                <Button fx:id="manageCustomers_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#loadCustomers" prefHeight="50.0" prefWidth="155.0" text="%manageCustomers_btn" />
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutY="224.0" prefHeight="75.0" prefWidth="400.0" />
+        <VBox alignment="CENTER" layoutY="299.0" prefHeight="75.0" prefWidth="400.0" />
+        <VBox alignment="CENTER" layoutY="374.0" prefHeight="75.0" prefWidth="400.0" />
+        <Button fx:id="manageAppointments_btn" layoutX="160.0" layoutY="449.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#loadAppointments" prefHeight="50.0" prefWidth="145.0" text="%manageAppts_btn" />
+        <Button fx:id="reporting_btn" layoutX="305.0" layoutY="449.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#loadReports" prefHeight="50.0" prefWidth="129.0" text="%reporting_btn" />
+        <Button fx:id="exit_btn" layoutX="476.0" layoutY="449.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#exitSystem" prefHeight="50.0" prefWidth="145.0" text="%exit_btn" />
+        <TableView fx:id="customer_tbl" layoutX="33.0" layoutY="74.0" prefHeight="358.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="customerID_col" prefWidth="36.0" text="ID" />
+                <TableColumn fx:id="customerName_col" prefWidth="163.0" text="%custName_col" />
+            </columns>
+        </TableView>
+        <TableView fx:id="appointment_tbl" layoutX="296.0" layoutY="74.0" prefHeight="358.0" prefWidth="304.0">
+            <columns>
+                <TableColumn fx:id="appointmentTitle_col" prefWidth="61.0" text="%aptTitle_col" />
+                <TableColumn fx:id="appointmentCustomer_col" prefWidth="89.0" text="%aptCust_col" />
+                <TableColumn fx:id="appointmentStartDateTime_col" prefWidth="75.0" text="%aptStartDateTime_col" />
+                <TableColumn fx:id="appointmentEndDateTime_col" prefWidth="78.0" text="%aptEndDateTime_col" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

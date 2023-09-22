@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.UpdateCustomerController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="450.0">
+            <children>
+                <Label text="%updateCustText">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="94.0" prefHeight="322.0" prefWidth="450.0">
+            <children>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="324.0" prefWidth="200.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%custIDText" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%name_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%phone_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%address_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%zip_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label text="%divisionID_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="41.0" prefWidth="200.0" text="%createdBy_col" textAlignment="CENTER" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox maxHeight="-Infinity" prefHeight="324.0" prefWidth="250.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerId_txt" editable="false" promptText="%custIDText" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerName_txt" promptText="%name_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerPhone_txt" promptText="%phone_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerAddress_txt" promptText="%address_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerZip_txt" promptText="%zip_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerDivisionID_txt" editable="false" promptText="%divisionID_lbl" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerCreatedBy_txt" editable="false" prefHeight="25.0" prefWidth="199.0" promptText="%createdBy_col" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutY="414.0" prefHeight="79.0" prefWidth="450.0">
+            <children>
+                <Button fx:id="save_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#saveCustomer" prefHeight="50.0" prefWidth="100.0" text="Save">
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="cancel_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="100.0" text="Cancel">
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutY="59.0" prefHeight="35.0" prefWidth="200.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="42.0" prefWidth="200.0" text="%createdOn_lbl" />
+            </children>
+        </HBox>
+        <TextField fx:id="customerCreateDate_txt" editable="false" layoutX="200.0" layoutY="64.0" promptText="\%createdOn_lbl" />
+    </children>
+</AnchorPane>

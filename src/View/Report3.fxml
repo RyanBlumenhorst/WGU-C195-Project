@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Report3Controller">
+    <children>
+        <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="38.0" prefWidth="286.0" text="%report3" wrapText="true">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <TableView fx:id="rpt3TableView" layoutX="14.0" layoutY="52.0" prefHeight="274.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="aptID_col" prefWidth="53.0" text="%apptId_col" />
+                <TableColumn fx:id="title_col" prefWidth="75.0" text="%title_col" />
+                <TableColumn fx:id="type_col" prefWidth="97.0" text="%type_col" />
+                <TableColumn fx:id="desc_col" prefWidth="75.0" text="%description_col" />
+                <TableColumn fx:id="start_col" prefWidth="112.0" text="%apptStart_col" />
+                <TableColumn fx:id="end_col" prefWidth="98.0" text="%aptEndDateTime_col" />
+                <TableColumn fx:id="custID_col" prefWidth="63.0" text="%custId_col" />
+            </columns>
+        </TableView>
+        <TextField fx:id="custFilter_txt" layoutX="437.0" layoutY="21.0" promptText="%name_lbl" />
+        <Label layoutX="352.0" layoutY="25.0" prefHeight="17.0" prefWidth="79.0" text="%name_lbl" />
+        <Button fx:id="back_btn" layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#back_btn" text="%cancel_btn" />
+        <Button fx:id="sort_btn" layoutX="294.0" layoutY="21.0" mnemonicParsing="false" onAction="#sort_btn" text="%sort" />
+    </children>
+</AnchorPane>
