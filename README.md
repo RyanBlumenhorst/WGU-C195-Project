@@ -33,3 +33,7 @@ all appointments for a specified customer)
 
 When you are finished, you click on log out on the main screen and it will
 disconnect you with the database.
+
+
+Unfortunately, I no longer have access to the database, so you can't run this program
+anymore without the connection.
